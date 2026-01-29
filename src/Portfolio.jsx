@@ -506,8 +506,8 @@ export default function Portfolio() {
       {/* Hero Section */}
       <section id="home" className="hero snap-section">
         <div className="hero-content">
-          <div className="hero-subtitle">Developer & Designer</div>
-          <h1 className="hero-title">Creating Digital Experiences</h1>
+          <div className="hero-subtitle">AI Engineer</div>
+          <h1 className="hero-title">George Adriel Kurniawan</h1>
           <p className="hero-description">
             I'm a passionate developer focused on building beautiful, functional web applications 
             that make a difference. Let's create something amazing together.
