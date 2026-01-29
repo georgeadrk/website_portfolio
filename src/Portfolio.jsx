@@ -8,7 +8,6 @@ export default function Portfolio() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
       
-      // Update active section based on scroll position
       const sections = ['home', 'about', 'projects', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
@@ -88,6 +87,14 @@ export default function Portfolio() {
 
         .portfolio {
           min-height: 100vh;
+        }
+
+        /* Snap sections with internal scrolling capability */
+        .snap-section {
+          scroll-snap-align: start;
+          scroll-snap-stop: normal; /* Allows scrolling through long sections */
+          min-height: 100vh;
+          position: relative;
         }
 
         /* Navigation */
