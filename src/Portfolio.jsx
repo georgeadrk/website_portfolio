@@ -78,6 +78,12 @@ export default function Portfolio() {
           --border: #e0e0e0;
         }
 
+        /* SCROLL-SNAP CONFIGURATION */
+        html {
+          scroll-behavior: smooth;
+          scroll-snap-type: y proximity; /* Use 'mandatory' for stricter snapping */
+        }
+
         body {
           font-family: 'DM Sans', sans-serif;
           color: var(--text);
@@ -498,7 +504,7 @@ export default function Portfolio() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="hero">
+      <section id="home" className="hero snap-section">
         <div className="hero-content">
           <div className="hero-subtitle">Developer & Designer</div>
           <h1 className="hero-title">Creating Digital Experiences</h1>
@@ -513,7 +519,7 @@ export default function Portfolio() {
       </section>
 
       {/* About Section */}
-      <section id="about">
+      <section id="about" className="snap-section">
         <h2 className="section-title">About Me</h2>
         <div className="about-content">
           <p>
@@ -539,7 +545,7 @@ export default function Portfolio() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects">
+      <section id="projects" className="snap-section">
         <h2 className="section-title">Featured Projects</h2>
         <div className="projects-grid">
           {projects.map((project, index) => (
@@ -560,7 +566,7 @@ export default function Portfolio() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact">
+      <section id="contact" className="snap-section">
         <h2 className="section-title">Get In Touch</h2>
         <div className="contact-content">
           <p style={{ fontSize: '1.1rem', color: 'var(--text-light)', lineHeight: '1.8', marginBottom: '2rem' }}>
